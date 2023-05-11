@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keiko.M</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="showcase">
+       <header>
+         <h1 class="logo"></h1>
+          <div class="toggle"></div>
+       </header>
+
+
+    <video src="./images/site.mp4" autoplay loop muted></video>
+
+ <div class="overlay"></div>
+
+ <div class="text">
+    <h2>Morita Keiko</h2>
+    <h3>Patissiere, motorbike rider</h3>
+    <p>
+        You can’t connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. You have to trust in something — your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life.
+―― Steve Jobs
+   </p>
+   <!-- <a href="">Dive</a> -->
+   <!--上はダミーリンク　下は天気予報（https://weatherwidget.org/ja）-->
+   <div id="ww_9e7f62e1d90dd" v='1.3' loc='auto' a='{"t":"responsive","lang":"ja","sl_lpl":1,"ids":[],"font":"Times","sl_ics":"one","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"rgba(255,255,255,1)","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"5","cl_odd":"#00000000"}'>Weather Data Source: <a href="https://wetterlang.de/wetter_25_tage/" id="ww_9e7f62e1d90dd_u" target="_blank">Wettervorhersage fur 25 tage</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_9e7f62e1d90dd"></script>
+</div>
+
+ <ul class="social">
+    <li><a href=""><img src="./images/facebook.png" target="_blank" alt=""></a></li>
+    <li><a href="https://www.instagram.com/keik0.m0rita/" target="_blank"><img src="./images/instagram.png" alt=""></a></li>
+    <li><a href=""><img src="./images/twitter.png" target="_blank" alt=""></a></li>
+ </ul>
+
+    </section>
+   <div class="menu">
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdK6v1x4msoFEtQ3fBZDhuae2lSxE0SVZvnHhJdvf7umo1NeA/viewform?usp=sf_link">contact</a></li>
+        <li><a href="profile.html">profile</a></li>
+        <li><a href="">recipi</a></li>
+        <li><a href="">motoblog</a></li>
+    </ul>
+   </div>
+
+   <script>
+    const menuToggle = document.querySelector(".toggle");
+    const showcase = document.querySelector(".showcase");
+    menuToggle.addEventListener("click", function () {
+
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+    });
+
+
+   </script>
+
+ </body>
+</html>
